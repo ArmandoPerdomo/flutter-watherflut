@@ -1,25 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="241fc752-5388-4314-a77c-a8c587719916" name="Default Changelist" comment="" />
+    <list default="true" id="241fc752-5388-4314-a77c-a8c587719916" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon_states/c.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon_states/h.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon_states/hc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon_states/hr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon_states/lc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon_states/lr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon_states/s.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon_states/sl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon_states/sn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon_states/t.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/core/common_ui/header_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/core/common_ui/loader-widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/core/constants/data_constants.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/core/constants/ui_constants.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/core/models/base_city.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/core/models/city.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/core/repository/city/city_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/core/repository/city/city_repository_impl.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/core/util/debouncer.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/cities/add_city_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/cities/bloc/cities_bloc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/cities/cities_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/home/empty_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/home/home_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/home/weather_details_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/home/weather_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Armando\Proyectos\watherflut\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1favvFhJFiomZzU3kQbOrXY2REt" />
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" />
-    <panes>
-      <pane id="ProjectPane">
-        <option name="show-excluded-files" value="false" />
-      </pane>
-    </panes>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/ui/home" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Armando\Proyectos\watherflut\lib\ui\home" />
+      <recent name="D:\Armando\Proyectos\watherflut\lib\ui\cities\bloc" />
+      <recent name="D:\Armando\Proyectos\watherflut\lib\core\repository\city" />
+      <recent name="D:\Armando\Proyectos\watherflut\lib\core\util" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -33,5 +99,58 @@
       <updated>1596469246666</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="645" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1596813202677">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="645" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1010/-1360.135.1360.728@0.0.1680.1010" timestamp="1596813202677" />
+    <state x="570" y="251" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596752874084">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="570" y="251" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1010/-1360.135.1360.728@0.0.1680.1010" timestamp="1596752874084" />
+    <state x="620" y="246" key="FileChooserDialogImpl" timestamp="1597180487185">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="620" y="246" key="FileChooserDialogImpl/0.0.1680.1010/-1360.135.1360.728@0.0.1680.1010" timestamp="1597180487185" />
+    <state width="1637" height="213" key="GridCell.Tab.0.bottom" timestamp="1597246282969">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="213" key="GridCell.Tab.0.bottom/0.0.1680.1010/-1360.135.1360.728@0.0.1680.1010" timestamp="1597246282969" />
+    <state width="1637" height="213" key="GridCell.Tab.0.center" timestamp="1597246282969">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="213" key="GridCell.Tab.0.center/0.0.1680.1010/-1360.135.1360.728@0.0.1680.1010" timestamp="1597246282969" />
+    <state width="1637" height="213" key="GridCell.Tab.0.left" timestamp="1597246282969">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="213" key="GridCell.Tab.0.left/0.0.1680.1010/-1360.135.1360.728@0.0.1680.1010" timestamp="1597246282969" />
+    <state width="1637" height="213" key="GridCell.Tab.0.right" timestamp="1597246282969">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="213" key="GridCell.Tab.0.right/0.0.1680.1010/-1360.135.1360.728@0.0.1680.1010" timestamp="1597246282969" />
+    <state x="143" y="294" key="SettingsEditor" timestamp="1596482728550">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="143" y="294" key="SettingsEditor/0.0.1680.1010/-1360.135.1360.728@0.0.1680.1010" timestamp="1596482728550" />
+    <state x="100" y="100" width="1480" height="810" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1597240979053">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="100" y="100" width="1480" height="810" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1680.1010/-1360.135.1360.728@0.0.1680.1010" timestamp="1597240979053" />
+    <state x="536" y="328" key="com.intellij.ide.util.TipDialog" timestamp="1597240953489">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="536" y="328" key="com.intellij.ide.util.TipDialog/0.0.1680.1010/-1360.135.1360.728@0.0.1680.1010" timestamp="1597240953489" />
+    <state x="536" y="103" width="737" height="804" key="find.popup" timestamp="1597243563204">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="536" y="103" width="737" height="804" key="find.popup/0.0.1680.1010/-1360.135.1360.728@0.0.1680.1010" timestamp="1597243563204" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1596748698001">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.0.1680.1010/-1360.135.1360.728@0.0.1680.1010" timestamp="1596748698001" />
   </component>
 </project>
