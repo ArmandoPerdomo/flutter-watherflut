@@ -46,8 +46,7 @@ class CitiesBloc extends ChangeNotifier{
     loading = true;
     notifyListeners();
 
-    final response = await get("$api/${baseCity.id}");
-    final city = City.fromJson(response.body);
+    final city = await getCity(baseCity.id);
 
     try{
       errorMessage = null;
@@ -67,14 +66,26 @@ class CitiesBloc extends ChangeNotifier{
     notifyListeners();
   }
 
-  Future<void> removeBaseCity(BaseCity city) async{
-    await repository.remove(city.id);
-    await refreshCitiesStore();
-    notifyListeners();
+  Future<void> validateAndUpdateCitiesStore() async{
+    final currentDate = DateTime.now();
+    for(int i = 0; i<citiesStore.length; i++){
+      City city = citiesStore[i];
+      if(city.time.month == currentDate.month && city.time.day == currentDate.day){
+        continue;
+      }
+
+      City updated = await getCity(city.woeid);
+      citiesStore.setAll(i, [updated]);
+    }
   }
 
-  Future<void> removeCity(City city) async{
-    await repository.remove(city.woeid);
+  Future<City> getCity(int id) async{
+    final response = await get("$api/$id");
+    return City.fromJson(response.body);
+  }
+
+  Future<void> removeCity(int id) async{
+    await repository.remove(id);
     await refreshCitiesStore();
     notifyListeners();
   }

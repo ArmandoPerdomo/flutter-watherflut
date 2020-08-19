@@ -32,6 +32,8 @@ dependencies:
   shared_preferences: ^0.5.8
   intl: any
   flutter_svg: ^0.18.0
+  smooth_page_indicator: ^0.2.0
+  url_launcher: any
 
 dev_dependencies:
   flutter_test:

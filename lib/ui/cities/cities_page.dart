@@ -33,7 +33,7 @@ class _CitiesPageState extends State<CitiesPage> {
   Widget renderCitiesList() {
     if(bloc.citiesStore.isEmpty){
       return Text(
-        "No tienes ciudades agregadas 😥",
+        "No cities added already 😥",
         style: TextStyle(fontSize: 20),
       );
     }
@@ -72,7 +72,7 @@ class _CitiesPageState extends State<CitiesPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                HeaderWidget(title: 'Mis Ciudades'),
+                HeaderWidget(title: 'My Cities'),
                 Expanded(
                   child: Center(
                     child: renderCitiesList(),
@@ -116,7 +116,7 @@ class CityItem extends StatelessWidget {
             IconButton(
               icon: Icon(Icons.clear, color: Colors.red),
               onPressed: () async{
-                await bloc.removeCity(city);
+                await bloc.removeCity(city.woeid);
                 voidCallbackRefresh();
               },
             )

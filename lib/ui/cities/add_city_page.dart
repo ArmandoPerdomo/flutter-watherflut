@@ -38,7 +38,7 @@ class _AddCityPageState extends State<AddCityPage> {
             padding: const EdgeInsets.all(PADDING_PAGE),
             child: Column(
               children: <Widget>[
-                HeaderWidget(title: 'Agregar Ciudad'),
+                HeaderWidget(title: 'Add City'),
                 const SizedBox(height: 50),
                 ClipRRect(
                   borderRadius: BorderRadius.circular(15.0),
@@ -50,7 +50,7 @@ class _AddCityPageState extends State<AddCityPage> {
                         filled: true,
                         fillColor: Colors.grey[200],
                         prefixIcon: Icon(Icons.search, color: Colors.grey),
-                        hintText: 'Buscar Ciudad'
+                        hintText: 'Search City'
                     ),
                   ),
                 ),
@@ -62,11 +62,11 @@ class _AddCityPageState extends State<AddCityPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          "No existen resultados 😅",
+                          "No matches with this criteria 😅",
                           style: TextStyle(fontSize: 20),
                         ),
                         Text(
-                          "Prueba escribiendo el nombre de una ciudad",
+                          "Try typing the name of a city",
                           style: TextStyle(fontSize: 12),
                         ),
                       ],
@@ -86,7 +86,7 @@ class _AddCityPageState extends State<AddCityPage> {
                                   fontSize: 20
                               ),
                             ),
-                            trailing: renderTrailingCityIcon(city),
+                            trailing: bloc.loading ? null: renderTrailingCityIcon(city),
                           );
                         }
                     ),
@@ -117,7 +117,7 @@ class _AddCityPageState extends State<AddCityPage> {
     return IconButton(
       icon: Icon(Icons.check, color: Colors.green),
       onPressed: () {
-        bloc.removeBaseCity(city);
+        bloc.removeCity(city.id);
       },
     );
   }

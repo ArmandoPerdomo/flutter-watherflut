@@ -1,5 +1,8 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:watherflut/core/constants/ui_constants.dart';
+
 
 class EmptyWidget extends StatelessWidget {
   final VoidCallback onAddCityTap;
@@ -33,14 +36,14 @@ class EmptyWidget extends StatelessWidget {
                     height: 40,
                   ),
                   Text(
-                    "Hola, \nBienvenido",
+                    "Hello, \nWelcome",
                     style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(
                     height: 50,
                   ),
                   Text(
-                    "¿Que te parece si agregamos \n una nueva ciudad?",
+                    "What if we start adding \na new city?",
                     style: TextStyle(fontSize: 20),
                   ),
                   const SizedBox(
@@ -48,12 +51,44 @@ class EmptyWidget extends StatelessWidget {
                   ),
                   RaisedButton(
                     onPressed: () => onAddCityTap(),
-                    child: Text("Agregar Ciudad"),
+                    child: Text("Add City"),
                     elevation: 1,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15.0)
                     ),
-                  )
+                  ),
+                  Expanded(
+                    child: Align(
+                      alignment: Alignment.bottomRight,
+                      child: RichText(
+                        text: TextSpan(
+                          text: 'By Armando \n',
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () async {
+                              final url = 'https://github.com/ArmandoPerdomo?tab=repositories';
+                              if (await canLaunch(url)) {
+                                await launch(
+                                  url,
+                                  forceSafariVC: false,
+                                );
+                              }
+                            },
+                          style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.black,
+                              shadows: [
+                                Shadow(
+                                    blurRadius: 4.0,
+                                    offset: Offset(2.0, 3.0),
+                                    color: Colors.blue
+                                )
+                              ]
+                          ),
+                        ),
+                      )
+                    ),
+                  ),
                 ],
               ),
             ),

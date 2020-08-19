@@ -21,7 +21,7 @@ class WeatherDetailsWidget extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Text(
-                'Pronóstico de ${city.consolidatedWeather.length} Días',
+                '${city.consolidatedWeather.length} Day Forecast',
                 style: TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.w500
@@ -65,9 +65,9 @@ class WeatherDetailsWidget extends StatelessWidget {
                                 Row(
                                   //mainAxisAlignment: MainAxisAlignment.spaceAround,
                                   children: [
-                                    Expanded(child: Text('Viento', textAlign: TextAlign.center)),
-                                    Expanded(child: Text('Presión de Aire', textAlign: TextAlign.center)),
-                                    Expanded(child: Text('Humedad', textAlign: TextAlign.center))
+                                    Expanded(child: Text('Wind', textAlign: TextAlign.center)),
+                                    Expanded(child: Text('Air Pressure', textAlign: TextAlign.center)),
+                                    Expanded(child: Text('Humidity', textAlign: TextAlign.center))
                                   ],
                                 ),
                                 const SizedBox(height: 15),

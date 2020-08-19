@@ -40,7 +40,11 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget renderBody() {
-    return bloc.citiesStore.isEmpty ? EmptyWidget(onAddCityTap: () => handleNavigatePress(context),)
-          : WeatherWidget(bloc.citiesStore, () => handleNavigatePress(context));
+    if(bloc.citiesStore.isEmpty){
+      return EmptyWidget(onAddCityTap: () => handleNavigatePress(context));
+    }
+
+    bloc.validateAndUpdateCitiesStore();
+    return WeatherWidget(bloc.citiesStore, () => handleNavigatePress(context));
   }
 }
