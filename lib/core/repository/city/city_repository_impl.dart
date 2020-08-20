@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:watherflut/core/models/city.dart';
 import 'package:watherflut/core/repository/city/city_repository.dart';

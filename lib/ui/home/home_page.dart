@@ -45,6 +45,10 @@ class _HomePageState extends State<HomePage> {
     }
 
     bloc.validateAndUpdateCitiesStore();
-    return WeatherWidget(bloc.citiesStore, () => handleNavigatePress(context));
+    return WeatherWidget(
+      cities: bloc.citiesStore,
+      onAddCityTap: () => handleNavigatePress(context),
+      initialCity: bloc.citiesStore[0],
+    );
   }
 }

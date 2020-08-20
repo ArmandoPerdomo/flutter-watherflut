@@ -2,24 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:watherflut/core/models/city.dart';
+import 'package:watherflut/ui/home/fade_in_widget.dart';
 import 'package:watherflut/ui/home/weather_details_widget.dart';
 
 class WeatherWidget extends StatefulWidget {
   final List<City> cities;
   final VoidCallback onAddCityTap;
-  City currentCity;
-  ValueNotifier _currentPageNotifier;
+  final City initialCity;
 
-  WeatherWidget(this.cities, this.onAddCityTap){
-    currentCity = cities[0];
-    _currentPageNotifier = ValueNotifier<int>(0);
-  }
+  final ValueNotifier _currentPageNotifier = ValueNotifier<int>(0);
+
+  WeatherWidget({this.cities, this.onAddCityTap, this.initialCity});
 
   @override
   _WeatherWidgetState createState() => _WeatherWidgetState();
 }
 
 class _WeatherWidgetState extends State<WeatherWidget> {
+  City _currentCity;
+
   List<BoxShadow> _shadows = [
     BoxShadow(
         color: Colors.black38,
@@ -50,14 +51,20 @@ class _WeatherWidgetState extends State<WeatherWidget> {
     );
   }
 
+  get currentCity => _currentCity == null ? widget.initialCity: _currentCity;
+  set currentCity(City city) => _currentCity = city;
+
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
         Positioned.fill(
-            child: Image.asset(
-                'assets/background_states/${widget.currentCity.consolidatedWeather.first.weatherStateAbbr}.jpg',
-                fit: BoxFit.fill
+            child: FadeIn(
+              key: Key(currentCity.consolidatedWeather.first.weatherStateAbbr),
+              child: Image.asset(
+                  'assets/background_states/${currentCity.consolidatedWeather.first.weatherStateAbbr}.jpg',
+                  fit: BoxFit.fill
+              ),
             )
         ),
         SafeArea(
@@ -80,7 +87,7 @@ class _WeatherWidgetState extends State<WeatherWidget> {
                     child: PageView.builder(
                       onPageChanged: (i){
                         setState((){
-                          widget.currentCity = widget.cities[i];
+                          currentCity = widget.cities[i];
                           widget._currentPageNotifier.value = i;
                         });
                       },
