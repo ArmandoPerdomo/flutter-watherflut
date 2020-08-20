@@ -4,6 +4,8 @@ This is a new small project that I did with a youtube course from @LeonidasEsteb
 
 I added some things to put a practicing on my own.
 
+If you want to download the apk here's a link https://drive.google.com/file/d/1OCOWqJ2ZV6yR0W8hv1XggtmxPRlyvqT5/view?usp=sharing
+
 Hope you like it.
 
 ![Home](https://i.ibb.co/RhjfsXW/Screenshot-1597960508.png)
